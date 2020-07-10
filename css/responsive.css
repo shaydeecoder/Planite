@@ -1,0 +1,68 @@
+/* Section: Home */
+
+#home .col h1 {
+  font-size: 50px;
+}
+
+#home .col p {
+  font-size: 25px;
+}
+
+/* Section: About */
+
+#about{
+  text-align: center;
+}
+
+#about .title {
+  margin-bottom: 0;
+}
+
+#about .img {
+  display: none;
+}
+
+/* Section: Services */
+
+#services .row .col-md {
+  margin-bottom: 2rem;
+}
+
+/* Section: Gallery */
+
+#gallery .img-wrapper-sm {
+  display: none;
+}
+
+#gallery .row .col-12 {
+  margin-bottom: 1rem;
+}
+
+/* Section: Pricing */
+
+#pricing .pricing-box {
+  margin-bottom: 2.5rem;
+}
+
+/* Section: Clients */
+
+#clients {
+  padding: 1.5rem;
+}
+
+/* Section: Contact */
+
+#contact .img {
+  display: none;
+}
+
+/* Footer */
+
+#footer .logo-div {
+  text-align: center;
+}
+
+#footer .logo-div, 
+#footer .social-media {
+  margin-bottom: 3rem;
+}
