@@ -1,0 +1,281 @@
+:root {
+  /* colors */
+  --base-color: #BB946A;
+  --base-color-opacity: rgba(187, 148, 106, 0.1);
+  --light-color: #fff;
+  --dark-color-1: #3A3A3A;
+  --dark-color-2: #2C2C2C;
+
+  /* font */
+  --font-stack-logo: 'Parisienne', cursive;
+  --font-stack-head: 'PT Serif', serif;
+  --font-stack-body: 'Muli', sans-serif;
+
+  /* font-sizes */
+  --font-head-lg: 80px;
+  --font-head-md: 40px;
+  --font-head-sm: 23px;
+  --font-body-lg: 22px;
+  --font-body-md: 18px;
+  --font-body-sm: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-stack-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-stack-head);
+}
+
+h1, h2 {
+  padding-bottom: 2rem;
+}
+
+/* Utilities */
+
+.btn {
+  margin-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background: var(--base-color);
+  color: var(--light-color);
+  border-radius: 0;
+  font-family: var(--font-stack-body);
+}
+
+.title {
+  font-size: var(--font-head-md);
+  margin-bottom: 2rem;
+}
+
+/* Preloaders */
+
+#preloader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeeed8;
+}
+
+#webpage {
+  display: none;
+}
+
+
+/* Navigation Bar */
+
+header .container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  padding: 10px 85px;
+  transition: all .5s ease-in-out;
+}
+
+nav .logo {
+  font-family: var(--font-stack-logo);
+  font-size: 40px;
+}
+
+.sc-top-nav {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-nav > li {
+  padding: 0 15px;
+}
+
+
+/* Section: Home */
+
+#home {
+  background: url('../img/Rectangle\ 1.png') no-repeat center center/cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#home .hero-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 100vh;
+}
+
+#home .container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#home .col {
+  font-family: var(--font-stack-head);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#home .col h1 {
+  font-size: 80px;
+}
+
+#home .col p {
+  font-style: italic;
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Section: About */
+
+#about p {
+  font-size: var(--font-body-lg);
+}
+
+#about .img {
+  height: 719px;
+  background: url('../img/Rectangle\ 3.png') no-repeat right top, url('../img/img-frame.svg') no-repeat left bottom;
+}
+
+/* Section: Services */
+
+#services, #gallery, #clients {
+  min-height: 506px;
+  background: url('../img/Rectangle\ 5.png') no-repeat center center/cover;
+}
+
+#services i {
+  margin: auto;
+  width: 96px;
+  padding: 20px 10px;
+  border: 2px solid var(--base-color);
+  border-radius: 50%;
+  color: var(--base-color);
+}
+
+#services h3 {
+  margin-top: 1rem;
+  font-size: var(--font-head-sm);
+}
+
+/* Section: Work */
+
+#work .img-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: #323232;
+}
+
+#work .img-wrapper img {
+  height: 600px;
+  width: 100%;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#work .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.middle h2, .middle p {
+  color: var(--base-color);
+  font-family: var(--font-stack-head);
+}
+
+.middle h2 {
+  padding-bottom: 1rem;
+}
+
+.middle p {
+  font-style: italic;
+}
+
+#work .img-wrapper:hover .image {
+  opacity: 0;
+}
+
+#work .img-wrapper:hover .middle {
+  opacity: 1;
+}
+
+#work .btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: none;
+  color: var(--base-color);
+  border: 1px solid var(--base-color);
+  transition: transform .5s ease;
+}
+
+#work .btn:hover {
+  transform: scale(1.1);
+}
+
+/* Section: Gallery */
+
+#gallery .img-wrapper {
+  overflow: hidden;
+}
+
+#gallery img {
+  transition: transform .5s ease;
+}
+
+#gallery img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+
+/* Section: Pricing */
+
+#pricing .pricing-title {
+  padding: 1rem;
+  background: var(--base-color);
+  color: var(--light-color);
+}
+
+#pricing .pricing-spec p{
+  line-height: 1;
+}
+
+#pricing .pricing-value {
+  margin-top: 2rem;
+  font-size: var(--font-head-md);
+}
+
+#pricing .pricing-spec {
+  list-style: none;
+}
+
+#pricing .pricing-box-sm {
+  height: 500px;
+}
+
+#pricing .pricing-box-lg {
+  height: 550px;
+}
+
+#pricing .pricing-box-sm div {
+  height: 39vh;
+}
+
+#pricing .pricing-box-lg div {
+  height: 46vh;
+}
+
+/* Section: Clients */
+
