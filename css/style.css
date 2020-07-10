@@ -136,6 +136,10 @@ nav .logo {
   font-size: var(--font-body-lg);
 }
 
+#about p span {
+  font-weight: bold;
+}
+
 #about .img {
   height: 719px;
   background: url('../img/Rectangle\ 3.png') no-repeat right top, url('../img/img-frame.svg') no-repeat left bottom;
