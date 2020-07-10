@@ -279,3 +279,73 @@ nav .logo {
 
 /* Section: Clients */
 
+#clients .col-md {
+  margin: 1rem;
+  padding: 2rem;
+  background: var(--light-color);
+  font-size: var(--font-body-md);
+}
+
+#clients .col-md img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#clients h3 {
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+/* Section: Contact */
+
+#contact form input, 
+#contact form textarea {
+  background: var(--base-color-opacity);
+  border: none;
+}
+
+#contact form input:focus, 
+#contact form textarea:focus {
+  border: 1px solid var(--base-color);
+}
+
+/* footer */
+
+#footer {
+  background: var(--base-color);
+  color: #fff;
+}
+
+#footer h4 {
+  margin-bottom: 2rem;
+}
+
+#footer ul {
+  list-style: none;
+}
+
+#footer ul li {
+  margin-left: 2rem;
+}
+
+#footer ul li:first-child {
+  margin-left: 0;
+}
+
+#footer a {
+  color: var(--light-color);
+  transition: ease-in-out .5s;
+}
+
+#footer a:hover {
+  opacity: 0.5;
+}
+
+#footer form .btn {
+  margin-top: 0;
+  background: var(--light-color);
+  color: #000;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
