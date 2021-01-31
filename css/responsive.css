@@ -72,3 +72,9 @@
 #footer .social-media {
   margin-bottom: 3rem;
 }
+
+@media (max-width: 510px) {
+  .navbar {
+    padding: 10px 30px;
+  }
+}
