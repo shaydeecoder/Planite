@@ -41,7 +41,7 @@ $(function() {
 $(function(){
 
   $(".navbar-toggler").click(function(){
-    $("nav").toggleClass("sc-top-nav");
+    $("nav").toggleClass("toggleBg");
   });
 
 });
