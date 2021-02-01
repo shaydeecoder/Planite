@@ -1,11 +1,11 @@
 // PRELOADER
 
-// window.onload = function() {
-//   setTimeout(() => {
-//     document.getElementById('preloader').style.display = 'none';
-//     document.getElementById('webpage').style.display = 'block';
-//   }, 3000);
-// }
+/*window.onload = function() {
+  setTimeout(() => {
+    document.getElementById('preloader').style.display = 'none';
+    document.getElementById('webpage').style.display = 'block';
+  }, 3000);
+}*/
 
 
 // ANIMATION WOW Activattion
@@ -33,6 +33,15 @@ $(function() {
       $("nav").addClass("sc-top-nav");
     }
 
+  });
+
+});
+
+// Show Nav Transparent Background On Toggle (Mobile Nav)
+$(function(){
+
+  $(".navbar-toggler").click(function(){
+    $("nav").toggleClass("sc-top-nav");
   });
 
 });
